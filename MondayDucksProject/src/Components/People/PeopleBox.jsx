@@ -1,34 +1,28 @@
 import React, { useState } from 'react'; 
 import data from './People.json';
 import People from './People';
+import './People.css';
 
 const PeopleBox = () => {
-    const [toggleNames, setToggleNames] = useState(false);
     const [selectedPerson, setSelectedPerson] = useState(null);
 
-    const toggleOnClick = () => {
-        setToggleNames(!toggleNames);
-    }
-
-    const handlePersonClick = (person) => {
+    const handleSelectChange = (event) => {
+        const selectedValue = event.target.value;
+        const person = data.find(person => person.firstname === selectedValue);
         setSelectedPerson(person);
     }
 
     return (
         <section className="People">
-            <button onClick={toggleOnClick}>Names</button>
-            {toggleNames ? (
-                <ul>
-                    {data.map((person, index) => (
-                        <li 
-                            key={index}
-                            onClick={() => handlePersonClick(person)}
-                        >
-                            {person.firstname} {person.lastname}
-                        </li>
-                    ))}
-                </ul>
-            ) : null}
+            <label htmlFor="names">Choose a builder:</label>
+            <select name="names" id="names" onChange={handleSelectChange}>
+                <option value="">Name:</option>
+                {data.map((person, index) => (
+                    <option key={index} value={person.firstname}>
+                        {person.firstname} {person.lastname}
+                    </option>
+                ))}
+            </select>
             {selectedPerson && (
                 <People 
                     firstName={selectedPerson.firstname} 
