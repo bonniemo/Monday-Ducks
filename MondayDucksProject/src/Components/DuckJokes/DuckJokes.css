@@ -1,7 +1,10 @@
 .DuckJokesBox {
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 15rem;
+    max-height: 80vh;
+    overflow: scroll;
     .DuckJokeCard {
         flex: 1;
     }

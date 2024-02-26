@@ -6,7 +6,7 @@ const DuckJokesBox = () => {
     const data = DuckJokesData.data;
     return (
         <>
-            <article className='DuckJokesBox'>
+            <article className='DuckJokesBox'>            
                 {data.map((jokes) => (
                     <DuckJokes key ={jokes.index} joke ={jokes.joke}/>
                 ))}
