@@ -1,0 +1,14 @@
+.DuckJokesBox {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .DuckJokeCard {
+        flex: 1;
+    }
+    p {        
+        width: 10rem;
+        padding: 1.5rem;
+        border-radius: .5rem;
+        background-color: hotpink;
+    }
+}
