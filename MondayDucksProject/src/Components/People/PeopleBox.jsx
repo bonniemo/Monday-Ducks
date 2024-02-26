@@ -6,8 +6,8 @@ import './People.css';
 const PeopleBox = () => {
     const [selectedPerson, setSelectedPerson] = useState(null);
 
-    const handleSelectChange = (event) => {
-        const selectedValue = event.target.value;
+    const handleSelectChange = (e) => {
+        const selectedValue = e.target.value;
         const person = data.find(person => person.firstname === selectedValue);
         setSelectedPerson(person);
     }
@@ -15,7 +15,7 @@ const PeopleBox = () => {
     return (
         <section className="People">
             <label htmlFor="names">Choose a builder:</label>
-            <select name="names" id="names" onChange={handleSelectChange}>
+            <select name="names" onChange={handleSelectChange}>
                 <option value="">Name:</option>
                 {data.map((person, index) => (
                     <option key={index} value={person.firstname}>

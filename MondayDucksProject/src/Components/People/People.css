@@ -1,5 +1,6 @@
 .People {
     font-size: 1.2rem;
+    margin-bottom: 3rem;
     select {
         margin-left: 1rem;
         padding: .5rem;
@@ -8,8 +9,16 @@
         text-align: center;
 
     &:hover {
-        border-color: #646cff;
+        border-color: hotpink;
       }
-    }
 
+    }
+}
+
+.card {
+  background-color: hotpink;
+  max-width: 18rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
 }
