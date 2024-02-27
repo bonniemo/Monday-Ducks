@@ -6,10 +6,10 @@ const People = ({ firstName, lastName, pantColor, favoriteFood, favoriteTool, pe
                 <p>First name: {firstName}</p>
                 <p>Last name: {lastName}</p>
                 <p>Pant Color: {pantColor}</p>
-                <p>Favorite Food: {favoriteFood}</p>
+                <p>Favorite Food: {favoriteFood.join(", ")}</p>
                 <p>Favorite Tool: {favoriteTool}</p>
                 <p>Pet: {pet}</p>
-                <p>Hobby: {hobby}</p>
+                <p>Hobby: {hobby.join(", ")}</p>
             </section>
         </>
     )
