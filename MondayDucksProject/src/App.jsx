@@ -1,11 +1,12 @@
 import './App.css'
+import CompanyInfoBox from './Components/CompanyInfo/CompanyInfoBox';
 import DuckJokesBox from './Components/DuckJokes/DuckJokesBox';
 import PeopleBox from './Components/People/PeopleBox';
 
 const App = () => {
   return (
   <>
-    <h1>Good morning</h1>
+    {/* <CompanyInfoBox/> */}
     <PeopleBox/>    
     <DuckJokesBox/>
   </>

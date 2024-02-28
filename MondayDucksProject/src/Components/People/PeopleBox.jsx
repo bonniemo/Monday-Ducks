@@ -25,13 +25,7 @@ const PeopleBox = () => {
             </select>
             {selectedPerson && (
                 <People 
-                    firstName={selectedPerson.firstname} 
-                    lastName={selectedPerson.lastname} 
-                    pantColor={selectedPerson.pant_color}
-                    favoriteFood={selectedPerson.favorite_food}
-                    favoriteTool={selectedPerson.favorite_tool}
-                    pet={selectedPerson.pet}
-                    hobby={selectedPerson.hobby}
+                    person={selectedPerson} 
                 />
             )}
         </section>

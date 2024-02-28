@@ -1,18 +1,18 @@
-const People = ({ firstName, lastName, pantColor, favoriteFood, favoriteTool, pet, hobby }) => {
+const People = ({ person }) => {
+    const { firstname, lastname, pant_color, favorite_food, favorite_tool, pet, hobby } = person;
+
     return (
-        <>
-            <section className="card">
-                <h2>{firstName} {lastName}</h2>
-                <p>First name: {firstName}</p>
-                <p>Last name: {lastName}</p>
-                <p>Pant Color: {pantColor}</p>
-                <p>Favorite Food: {favoriteFood.join(", ")}</p>
-                <p>Favorite Tool: {favoriteTool}</p>
-                <p>Pet: {pet}</p>
-                <p>Hobby: {hobby.join(", ")}</p>
-            </section>
-        </>
-    )
+        <section className="card">
+            <h2>{firstname} {lastname}</h2>
+            <p>First name: {firstname}</p>
+            <p>Last name: {lastname}</p>
+            <p>Pant Color: {pant_color}</p>
+            <p>Favorite Food: {favorite_food.join(", ")}</p>
+            <p>Favorite Tool: {favorite_tool}</p>
+            <p>Pet: {pet}</p>
+            <p>Hobby: {hobby.join(", ")}</p>
+        </section>
+    );
 }
 
 export default People;
