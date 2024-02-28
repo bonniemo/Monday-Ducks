@@ -13,7 +13,7 @@ const PeopleBox = () => {
     }
 
     return (
-        <section className="People">
+        <section className="Builders">
             <label htmlFor="names">Choose a builder:</label>
             <select name="names" onChange={handleSelectChange}>
                 <option value="">Name:</option>

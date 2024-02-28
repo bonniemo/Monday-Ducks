@@ -1,18 +1,17 @@
-.People {
-    font-size: 1.2rem;
-    margin: 5rem 0;
-    select {
-        margin-left: 1rem;
-        padding: .5rem;
-        font-size: 1rem;
-        border-radius: .5rem;
-        text-align: center;
+.Builders {
+  font-size: 1.2rem;
+  margin: 5rem 0;
+  select {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
 
     &:hover {
-        border-color: hotpink;
-      }
-
+      border-color: hotpink;
     }
+  }
 }
 
 .card {
