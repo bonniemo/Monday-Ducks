@@ -6,7 +6,7 @@ import PeopleBox from './Components/People/PeopleBox';
 const App = () => {
   return (
   <>
-    {/* <CompanyInfoBox/> */}
+    <CompanyInfoBox/>
     <PeopleBox/>    
     <DuckJokesBox/>
   </>
